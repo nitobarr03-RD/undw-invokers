@@ -1,12 +1,14 @@
 # UNDW INVOKERS
 
-Guía comunitaria en español para Invokers: Titan Legacy. Aplicación estática, sin dependencias de servidor.
+Guía comunitaria en español para Invokers: Titan Legacy. Aplicación estática, sin acceso ni inicio de sesión en cuentas de juego.
+
+## Fuentes y actualización
+
+- El roster completo, filtros, fichas y tiers están en el [índice oficial de HitZone](https://invokers.com/hub/index/invokers/).
+- Las noticias públicas se sincronizan cada día desde el Centro de ayuda oficial de HitZone mediante `scripts/sync_hitzone.py` y se guardan en `data/hitzone-latest.json`.
+- El navegador lee ese feed público y mantiene el resumen guardado como respaldo cuando no hay conexión.
+- La app no usa una API de cuenta ni modifica perfiles del juego.
 
 ## Publicar en GitHub Pages
 
-1. Sube el contenido de esta carpeta a un repositorio de GitHub.
-2. En el repositorio, abre **Settings → Pages** y selecciona **GitHub Actions** como fuente.
-3. La acción `Deploy to GitHub Pages` publicará la página al hacer push a `main`.
-
-El catálogo de ejemplo y las recomendaciones generales están enlazados con las fichas y guías oficiales. Las imágenes remotas las sirve la web oficial de Invokers.
-
+El flujo `.github/workflows/pages.yml` publica `index.html` y sus datos estáticos. En el repositorio, abre **Settings → Pages** y selecciona **GitHub Actions** como fuente si Pages todavía no está activado. El sitio esperado es `https://nitobarr03-rd.github.io/undw-invokers/`.
