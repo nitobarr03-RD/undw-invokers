@@ -1,0 +1,16 @@
+(()=>{'use strict';
+const $=id=>document.getElementById(id), esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ranks=['S+','S','A+','A','B','C','D','E','Sin clasificar'];
+const labels={LEGENDARY:'Legendario',MYTHICAL:'Mítico',EPIC:'Épico',RARE:'Raro',UNCOMMON:'Poco común',COMMON:'Común','Melee Attacker':'Atacante cuerpo a cuerpo','Ranged Attacker':'Atacante a distancia',Support:'Apoyo',Tank:'Tanque',Damage:'Daño'};
+const key=s=>String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+function catalog(){return $('tierKind').value==='titans'?(window.UNDW_TITANS?.titans||[]):(window.UNDW_INVOKERS?.champions||[])}
+function rows(){const ratings=new Map((window.UNDW_TIERS?.[$('tierKind').value]||[]).map(r=>[key(r.name),r]));return catalog().map(c=>({...c,rarity:c.rarity.toUpperCase(),...(ratings.get(key(c.name))||{tier:'Sin clasificar',rating:null,role:''})}))}
+function options(id,values,first){const el=$(id);el.replaceChildren();const add=(v,t)=>{const o=document.createElement('option');o.value=v;o.textContent=t;el.append(o)};add('',first);values.forEach(v=>add(v,labels[v]||v))}
+function reset(){const all=rows();$('tierSearch').value='';options('tierFaction',[...new Set(all.map(c=>c.faction))].sort(),'Todas las facciones');options('tierRarity',[...new Set(all.map(c=>c.rarity))].sort(),'Todas las rarezas');options('tierRole',[...new Set(all.map(c=>c.role).filter(Boolean))].sort(),'Todos los roles');options('tierRank',ranks.filter(t=>all.some(c=>c.tier===t)),'Todos los tiers');render()}
+function render(){const all=rows(),q=key($('tierSearch').value);const list=all.filter(c=>(!q||key(c.name).includes(q))&&(!$('tierFaction').value||c.faction===$('tierFaction').value)&&(!$('tierRarity').value||c.rarity===$('tierRarity').value)&&(!$('tierRole').value||c.role===$('tierRole').value)&&(!$('tierRank').value||c.tier===$('tierRank').value)).sort((a,b)=>(b.rating??-1)-(a.rating??-1)||a.name.localeCompare(b.name));
+$('tierSource').href=$('tierKind').value==='titans'?'https://invokers.com/tier-list/titans/':'https://invokers.com/tier-list/';
+$('tierStatus').textContent=`${list.length} de ${all.length} ${$('tierKind').value==='titans'?'Titanes':'campeones'} · PvE general · Fuente: Invokers.com`;
+$('tierBoard').innerHTML=ranks.map(t=>{const group=list.filter(c=>c.tier===t);if(!group.length)return '';return '<div class="tierRow" data-rank="'+esc(t)+'"><h3>Tier '+esc(t)+'<small>'+group.length+'</small></h3><div class="tierCards">'+group.map(c=>'<article class="card tierCard"><img src="'+esc(c.image)+'" alt="'+esc(c.name)+'" loading="lazy"><h4>'+esc(c.name)+'</h4><p>'+esc(c.faction)+' · '+esc(labels[c.rarity]||c.rarity)+'</p><p>'+esc(labels[c.role]||c.role)+'</p><p class="tierRating">'+(c.rating===null?'Sin valoración publicada':c.rating.toFixed(2)+' / 5')+'</p><a href="'+esc(c.profile)+'" target="_blank" rel="noopener">Ver habilidades ↗</a></article>').join('')+'</div></div>'}).join('')||'<p class="note">No hay resultados. Prueba otro nombre o restablece los filtros.</p>';
+}
+$('tierKind').addEventListener('change',reset);$('tierSearch').addEventListener('input',render);['tierFaction','tierRarity','tierRole','tierRank'].forEach(id=>$(id).addEventListener('change',render));$('tierReset').addEventListener('click',reset);reset();
+})();
