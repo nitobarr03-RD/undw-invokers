@@ -1,0 +1,17 @@
+(()=>{'use strict';
+const select=document.getElementById('preferredLanguage'),status=document.getElementById('translationStatus'),link=document.getElementById('translateFullPage');
+function remember(key,value){try{localStorage.setItem(key,value);}catch(_){}}
+function translationLink(){const language=select.value;remember('undwLanguage',language);const url=new URL('https://translate.google.com/translate');url.searchParams.set('sl','auto');url.searchParams.set('tl',language);url.searchParams.set('u','https://undwclan.es/');link.href=url.href;link.hidden=language==='es';}
+try{const saved=localStorage.getItem('undwLanguage');if([...select.options].some(o=>o.value===saved))select.value=saved;}catch(_){}
+translationLink();
+let loaded=false,timeout;
+function applyLanguage(){const widget=document.querySelector('.goog-te-combo');if(!widget)return false;widget.value=select.value==='es'?'':select.value;widget.dispatchEvent(new Event('change',{bubbles:true}));status.textContent=select.value==='es'?'Idioma original: español.':'Traducción automática de Google. Los nombres y estadísticas pueden requerir revisión.';return true;}
+window.undwTranslateReady=()=>{clearTimeout(timeout);if(!window.google?.translate?.TranslateElement){status.textContent='Usa el enlace de Google Translate para traducir la página.';return;}new google.translate.TranslateElement({pageLanguage:'es',includedLanguages:'es,en,fr,de,pt,it,pl,ru,uk,tr,ar,ja,ko,zh-CN',autoDisplay:false},'google_translate_element');const observer=new MutationObserver(()=>{if(document.querySelector('.goog-te-combo')){applyLanguage();observer.disconnect();}});observer.observe(document.getElementById('google_translate_element'),{childList:true,subtree:true});applyLanguage();};
+select.addEventListener('change',()=>{translationLink();if(loaded)applyLanguage();else status.textContent=select.value==='es'?'':'Pulsa «Traducir aquí» o abre Google Translate.';});
+document.getElementById('activateTranslation').addEventListener('click',()=>{if(applyLanguage())return;if(loaded){status.textContent='Si el traductor no está disponible, usa «Abrir en Google Translate».';return;}loaded=true;status.textContent='Cargando traductor…';const script=document.createElement('script');script.src='https://translate.google.com/translate_a/element.js?cb=undwTranslateReady';script.onerror=()=>{status.textContent='No se pudo cargar el traductor. Usa el enlace de Google Translate.';loaded=false;};document.head.appendChild(script);timeout=setTimeout(()=>{if(!document.querySelector('.goog-te-combo'))status.textContent='El traductor tarda en responder. Puedes abrir Google Translate.';},12000);});
+// Hosted aggregate counters. These are not a browser-local count or a count of people.
+if(location.hostname==='undwclan.es'||location.hostname==='www.undwclan.es'){
+const counter=document.createElement('script');counter.async=true;counter.src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';counter.onerror=()=>{document.getElementById('counterStatus').textContent='Contador temporalmente no disponible.';};document.head.appendChild(counter);
+setTimeout(()=>{if(!/^\d/.test(document.getElementById('busuanzi_value_site_pv').textContent.trim()))document.getElementById('counterStatus').textContent='Contador temporalmente no disponible. No se muestra una cifra estimada.';},12000);
+}else{document.getElementById('counterStatus').textContent='El contador se activa en undwclan.es para no mezclar visitas de desarrollo.';}
+})();
