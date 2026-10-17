@@ -1,6 +1,6 @@
 window.UNDW_TIERS = {
-  "checkedAt": "2026-10-16",
-  "sourceUpdatedAt": "2026-10-14",
+  "checkedAt": "2026-10-17",
+  "sourceUpdatedAt": "2026-10-15",
   "champions": [
     {
       "name": "Marilla the Black Salvo",
@@ -39,6 +39,12 @@ window.UNDW_TIERS = {
       "role": "Support"
     },
     {
+      "name": "Luxare the Prismatic",
+      "rating": 4.95,
+      "tier": "S+",
+      "role": "Support"
+    },
+    {
       "name": "Virtus the Heavensent",
       "rating": 4.96,
       "tier": "S+",
@@ -57,20 +63,20 @@ window.UNDW_TIERS = {
       "role": "Melee Attacker"
     },
     {
+      "name": "Lightwind Iristeia",
+      "rating": 4.91,
+      "tier": "S",
+      "role": "Melee Attacker"
+    },
+    {
       "name": "Mistress Dusca",
       "rating": 4.91,
       "tier": "S",
       "role": "Melee Attacker"
     },
     {
-      "name": "Lightwind Iristeia",
-      "rating": 4.9,
-      "tier": "S",
-      "role": "Melee Attacker"
-    },
-    {
       "name": "Pit Boss Durboll",
-      "rating": 4.88,
+      "rating": 4.89,
       "tier": "S",
       "role": "Melee Attacker"
     },
@@ -99,26 +105,26 @@ window.UNDW_TIERS = {
       "role": "Melee Attacker"
     },
     {
-      "name": "Trench Horror Cezal",
-      "rating": 4.85,
-      "tier": "S",
-      "role": "Melee Attacker"
-    },
-    {
       "name": "Devi of the Six",
       "rating": 4.85,
       "tier": "S",
       "role": "Melee Attacker"
     },
     {
+      "name": "Trench Horror Cezal",
+      "rating": 4.84,
+      "tier": "S",
+      "role": "Melee Attacker"
+    },
+    {
       "name": "Nautila the Unfathomable",
-      "rating": 4.85,
+      "rating": 4.84,
       "tier": "S",
       "role": "Melee Attacker"
     },
     {
       "name": "Realm Wanderer Sakamoji",
-      "rating": 4.84,
+      "rating": 4.82,
       "tier": "S",
       "role": "Melee Attacker"
     },
@@ -130,12 +136,6 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Shredripper Matescu",
-      "rating": 4.82,
-      "tier": "S",
-      "role": "Melee Attacker"
-    },
-    {
-      "name": "Deadlash Vakia",
       "rating": 4.81,
       "tier": "S",
       "role": "Melee Attacker"
@@ -147,8 +147,20 @@ window.UNDW_TIERS = {
       "role": "Melee Attacker"
     },
     {
-      "name": "Tuskax the Rampage",
+      "name": "Deadlash Vakia",
       "rating": 4.81,
+      "tier": "S",
+      "role": "Melee Attacker"
+    },
+    {
+      "name": "Gawara the United",
+      "rating": 4.81,
+      "tier": "S",
+      "role": "Melee Attacker"
+    },
+    {
+      "name": "Tuskax the Rampage",
+      "rating": 4.8,
       "tier": "S",
       "role": "Melee Attacker"
     },
@@ -160,7 +172,7 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Vanato the Fiend",
-      "rating": 4.89,
+      "rating": 4.88,
       "tier": "S",
       "role": "Ranged Attacker"
     },
@@ -189,20 +201,14 @@ window.UNDW_TIERS = {
       "role": "Ranged Attacker"
     },
     {
-      "name": "Luxare the Prismatic",
+      "name": "Plaxi The Monarch",
       "rating": 4.95,
       "tier": "S",
       "role": "Support"
     },
     {
-      "name": "Plaxi The Monarch",
-      "rating": 4.94,
-      "tier": "S",
-      "role": "Support"
-    },
-    {
       "name": "Crestelle Moonveil",
-      "rating": 4.93,
+      "rating": 4.94,
       "tier": "S",
       "role": "Support"
     },
@@ -226,7 +232,7 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Charvaine the Hypnomancer",
-      "rating": 4.87,
+      "rating": 4.88,
       "tier": "S",
       "role": "Support"
     },
@@ -256,7 +262,7 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Skoloss the Tomb Baron",
-      "rating": 4.88,
+      "rating": 4.89,
       "tier": "S",
       "role": "Tank"
     },
@@ -268,7 +274,7 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Kingpin Tatsulow",
-      "rating": 4.83,
+      "rating": 4.82,
       "tier": "S",
       "role": "Tank"
     },
@@ -279,19 +285,7 @@ window.UNDW_TIERS = {
       "role": "Tank"
     },
     {
-      "name": "Gawara the United",
-      "rating": 4.8,
-      "tier": "A+",
-      "role": "Melee Attacker"
-    },
-    {
-      "name": "Nistoru the Bloodbought",
-      "rating": 4.79,
-      "tier": "A+",
-      "role": "Melee Attacker"
-    },
-    {
-      "name": "Ardell The Torrent",
+      "name": "Gurgos Ironchain",
       "rating": 4.79,
       "tier": "A+",
       "role": "Melee Attacker"
@@ -309,8 +303,14 @@ window.UNDW_TIERS = {
       "role": "Melee Attacker"
     },
     {
-      "name": "Gurgos Ironchain",
-      "rating": 4.79,
+      "name": "Ardell The Torrent",
+      "rating": 4.78,
+      "tier": "A+",
+      "role": "Melee Attacker"
+    },
+    {
+      "name": "Nistoru the Bloodbought",
+      "rating": 4.78,
       "tier": "A+",
       "role": "Melee Attacker"
     },
@@ -340,7 +340,7 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Kollodon the Summit",
-      "rating": 4.74,
+      "rating": 4.73,
       "tier": "A+",
       "role": "Melee Attacker"
     },
@@ -352,7 +352,7 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Grimnall the Hollowed",
-      "rating": 4.77,
+      "rating": 4.78,
       "tier": "A+",
       "role": "Ranged Attacker"
     },
@@ -418,19 +418,19 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Ruthos the Enthralled",
-      "rating": 4.62,
+      "rating": 4.63,
       "tier": "A+",
       "role": "Tank"
     },
     {
       "name": "Sanctus the Valiant",
-      "rating": 4.52,
+      "rating": 4.51,
       "tier": "A",
       "role": "Melee Attacker"
     },
     {
       "name": "Kisanka",
-      "rating": 4.52,
+      "rating": 4.5,
       "tier": "A",
       "role": "Ranged Attacker"
     },
@@ -441,28 +441,16 @@ window.UNDW_TIERS = {
       "role": "Support"
     },
     {
+      "name": "Zenneris",
+      "rating": 4.53,
+      "tier": "A",
+      "role": "Support"
+    },
+    {
       "name": "Kravul the Iron Shaman",
       "rating": 4.52,
       "tier": "A",
       "role": "Support"
-    },
-    {
-      "name": "Zenneris",
-      "rating": 4.52,
-      "tier": "A",
-      "role": "Support"
-    },
-    {
-      "name": "Zalasi Bloodthorne",
-      "rating": 4.49,
-      "tier": "B",
-      "role": "Melee Attacker"
-    },
-    {
-      "name": "Almea",
-      "rating": 4.48,
-      "tier": "B",
-      "role": "Melee Attacker"
     },
     {
       "name": "Incizza Inkbroth",
@@ -471,14 +459,26 @@ window.UNDW_TIERS = {
       "role": "Melee Attacker"
     },
     {
+      "name": "Zalasi Bloodthorne",
+      "rating": 4.48,
+      "tier": "B",
+      "role": "Melee Attacker"
+    },
+    {
+      "name": "Almea",
+      "rating": 4.46,
+      "tier": "B",
+      "role": "Melee Attacker"
+    },
+    {
       "name": "Veilstalker Nyctra",
-      "rating": 4.41,
+      "rating": 4.39,
       "tier": "B",
       "role": "Melee Attacker"
     },
     {
       "name": "Sabi",
-      "rating": 4.39,
+      "rating": 4.36,
       "tier": "B",
       "role": "Melee Attacker"
     },
@@ -496,43 +496,43 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Volkam Scorchblood",
-      "rating": 4.29,
-      "tier": "B",
-      "role": "Melee Attacker"
-    },
-    {
-      "name": "Vorak the Soulguard",
-      "rating": 4.29,
+      "rating": 4.3,
       "tier": "B",
       "role": "Melee Attacker"
     },
     {
       "name": "Cordus the Tempest",
-      "rating": 4.27,
-      "tier": "B",
-      "role": "Melee Attacker"
-    },
-    {
-      "name": "Tamana",
-      "rating": 4.26,
+      "rating": 4.28,
       "tier": "B",
       "role": "Melee Attacker"
     },
     {
       "name": "MOLDAK",
-      "rating": 4.24,
+      "rating": 4.28,
+      "tier": "B",
+      "role": "Melee Attacker"
+    },
+    {
+      "name": "Tamana",
+      "rating": 4.28,
+      "tier": "B",
+      "role": "Melee Attacker"
+    },
+    {
+      "name": "Vorak the Soulguard",
+      "rating": 4.26,
       "tier": "B",
       "role": "Melee Attacker"
     },
     {
       "name": "Benkoro the Void Wrangler",
-      "rating": 4.22,
+      "rating": 4.23,
       "tier": "B",
       "role": "Melee Attacker"
     },
     {
       "name": "Grovewarden Sethisal",
-      "rating": 4.2,
+      "rating": 4.19,
       "tier": "B",
       "role": "Melee Attacker"
     },
@@ -550,13 +550,19 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Granvil",
-      "rating": 4.14,
+      "rating": 4.15,
       "tier": "B",
       "role": "Melee Attacker"
     },
     {
-      "name": "Tenso the Fixer",
-      "rating": 4.08,
+      "name": "Highguard Hundrik",
+      "rating": 4.1,
+      "tier": "B",
+      "role": "Melee Attacker"
+    },
+    {
+      "name": "Arami",
+      "rating": 4.09,
       "tier": "B",
       "role": "Melee Attacker"
     },
@@ -567,20 +573,14 @@ window.UNDW_TIERS = {
       "role": "Melee Attacker"
     },
     {
+      "name": "Tenso the Fixer",
+      "rating": 4.05,
+      "tier": "B",
+      "role": "Melee Attacker"
+    },
+    {
       "name": "Lusis",
       "rating": 4.05,
-      "tier": "B",
-      "role": "Melee Attacker"
-    },
-    {
-      "name": "Highguard Hundrik",
-      "rating": 4.05,
-      "tier": "B",
-      "role": "Melee Attacker"
-    },
-    {
-      "name": "Arami",
-      "rating": 4.04,
       "tier": "B",
       "role": "Melee Attacker"
     },
@@ -616,7 +616,13 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Avria the Mirage",
-      "rating": 4.36,
+      "rating": 4.35,
+      "tier": "B",
+      "role": "Ranged Attacker"
+    },
+    {
+      "name": "Kinslayer Sodama",
+      "rating": 4.28,
       "tier": "B",
       "role": "Ranged Attacker"
     },
@@ -627,14 +633,8 @@ window.UNDW_TIERS = {
       "role": "Ranged Attacker"
     },
     {
-      "name": "Kinslayer Sodama",
+      "name": "Railbolt Sarienne",
       "rating": 4.27,
-      "tier": "B",
-      "role": "Ranged Attacker"
-    },
-    {
-      "name": "Princess Kaelis",
-      "rating": 4.26,
       "tier": "B",
       "role": "Ranged Attacker"
     },
@@ -645,8 +645,8 @@ window.UNDW_TIERS = {
       "role": "Ranged Attacker"
     },
     {
-      "name": "Railbolt Sarienne",
-      "rating": 4.25,
+      "name": "Princess Kaelis",
+      "rating": 4.24,
       "tier": "B",
       "role": "Ranged Attacker"
     },
@@ -658,7 +658,7 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Sawtooth Veyna",
-      "rating": 4.23,
+      "rating": 4.2,
       "tier": "B",
       "role": "Ranged Attacker"
     },
@@ -670,7 +670,7 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Alasinthe",
-      "rating": 4.15,
+      "rating": 4.12,
       "tier": "B",
       "role": "Ranged Attacker"
     },
@@ -688,7 +688,7 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Redd Riot",
-      "rating": 4.01,
+      "rating": 4,
       "tier": "B",
       "role": "Ranged Attacker"
     },
@@ -700,31 +700,31 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Pyla the Fumebanner",
-      "rating": 4.42,
+      "rating": 4.43,
       "tier": "B",
       "role": "Support"
     },
     {
       "name": "Solnor",
-      "rating": 4.41,
+      "rating": 4.43,
       "tier": "B",
       "role": "Support"
     },
     {
       "name": "Navigator Gillum",
-      "rating": 4.38,
+      "rating": 4.41,
+      "tier": "B",
+      "role": "Support"
+    },
+    {
+      "name": "Professor Orielle",
+      "rating": 4.32,
       "tier": "B",
       "role": "Support"
     },
     {
       "name": "Anarose",
       "rating": 4.31,
-      "tier": "B",
-      "role": "Support"
-    },
-    {
-      "name": "Professor Orielle",
-      "rating": 4.3,
       "tier": "B",
       "role": "Support"
     },
@@ -742,7 +742,7 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Droviss the Warbeater",
-      "rating": 4.27,
+      "rating": 4.26,
       "tier": "B",
       "role": "Support"
     },
@@ -760,19 +760,13 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Meldrun the Mixer",
-      "rating": 4.09,
-      "tier": "B",
-      "role": "Support"
-    },
-    {
-      "name": "Sivuun",
-      "rating": 4.02,
+      "rating": 4.1,
       "tier": "B",
       "role": "Support"
     },
     {
       "name": "Confar the Burnished",
-      "rating": 4.46,
+      "rating": 4.47,
       "tier": "B",
       "role": "Tank"
     },
@@ -789,20 +783,20 @@ window.UNDW_TIERS = {
       "role": "Tank"
     },
     {
-      "name": "Ulsos the Dark Star",
+      "name": "Belmor",
       "rating": 4.35,
       "tier": "B",
       "role": "Tank"
     },
     {
-      "name": "Belmor",
+      "name": "Ulsos the Dark Star",
       "rating": 4.34,
       "tier": "B",
       "role": "Tank"
     },
     {
       "name": "Wild King Caladras",
-      "rating": 4.24,
+      "rating": 4.22,
       "tier": "B",
       "role": "Tank"
     },
@@ -814,13 +808,13 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Lazenne",
-      "rating": 4.07,
+      "rating": 4.1,
       "tier": "B",
       "role": "Tank"
     },
     {
       "name": "Rikharel the Seascale",
-      "rating": 4.07,
+      "rating": 4.06,
       "tier": "B",
       "role": "Tank"
     },
@@ -843,7 +837,7 @@ window.UNDW_TIERS = {
       "role": "Melee Attacker"
     },
     {
-      "name": "Dosoji",
+      "name": "Tyxil the Adder",
       "rating": 3.95,
       "tier": "C",
       "role": "Melee Attacker"
@@ -855,14 +849,14 @@ window.UNDW_TIERS = {
       "role": "Melee Attacker"
     },
     {
-      "name": "Tyxil the Adder",
+      "name": "Mafis",
       "rating": 3.93,
       "tier": "C",
       "role": "Melee Attacker"
     },
     {
-      "name": "Mafis",
-      "rating": 3.92,
+      "name": "Dosoji",
+      "rating": 3.91,
       "tier": "C",
       "role": "Melee Attacker"
     },
@@ -880,25 +874,19 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Deepdrill Gemm",
-      "rating": 3.79,
-      "tier": "C",
-      "role": "Melee Attacker"
-    },
-    {
-      "name": "Malgar",
-      "rating": 3.77,
+      "rating": 3.78,
       "tier": "C",
       "role": "Melee Attacker"
     },
     {
       "name": "Klissa",
-      "rating": 3.75,
+      "rating": 3.77,
       "tier": "C",
       "role": "Melee Attacker"
     },
     {
       "name": "Rynn",
-      "rating": 3.74,
+      "rating": 3.76,
       "tier": "C",
       "role": "Melee Attacker"
     },
@@ -915,25 +903,31 @@ window.UNDW_TIERS = {
       "role": "Melee Attacker"
     },
     {
-      "name": "Silanth",
-      "rating": 3.67,
+      "name": "Malgar",
+      "rating": 3.7,
       "tier": "C",
       "role": "Melee Attacker"
     },
     {
       "name": "Leander the Searazor",
+      "rating": 3.68,
+      "tier": "C",
+      "role": "Melee Attacker"
+    },
+    {
+      "name": "Nioko Glassfang",
+      "rating": 3.66,
+      "tier": "C",
+      "role": "Melee Attacker"
+    },
+    {
+      "name": "Silanth",
       "rating": 3.66,
       "tier": "C",
       "role": "Melee Attacker"
     },
     {
       "name": "Ranath",
-      "rating": 3.65,
-      "tier": "C",
-      "role": "Melee Attacker"
-    },
-    {
-      "name": "Nioko Glassfang",
       "rating": 3.65,
       "tier": "C",
       "role": "Melee Attacker"
@@ -957,20 +951,20 @@ window.UNDW_TIERS = {
       "role": "Melee Attacker"
     },
     {
-      "name": "Sinndra",
+      "name": "Hara",
       "rating": 3.59,
       "tier": "C",
       "role": "Melee Attacker"
     },
     {
-      "name": "Astri",
+      "name": "Sinndra",
       "rating": 3.57,
       "tier": "C",
       "role": "Melee Attacker"
     },
     {
-      "name": "Hara",
-      "rating": 3.56,
+      "name": "Astri",
+      "rating": 3.55,
       "tier": "C",
       "role": "Melee Attacker"
     },
@@ -982,25 +976,19 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Grandmaster Vos",
-      "rating": 3.54,
+      "rating": 3.52,
       "tier": "C",
       "role": "Melee Attacker"
     },
     {
-      "name": "Bonetaker Kotsuga",
-      "rating": 3.5,
-      "tier": "C",
-      "role": "Melee Attacker"
-    },
-    {
-      "name": "Atriu",
-      "rating": 4,
+      "name": "Vinris",
+      "rating": 3.99,
       "tier": "C",
       "role": "Ranged Attacker"
     },
     {
-      "name": "Vinris",
-      "rating": 4,
+      "name": "Atriu",
+      "rating": 3.97,
       "tier": "C",
       "role": "Ranged Attacker"
     },
@@ -1018,7 +1006,7 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Specseeker Vunden",
-      "rating": 3.69,
+      "rating": 3.71,
       "tier": "C",
       "role": "Ranged Attacker"
     },
@@ -1029,44 +1017,50 @@ window.UNDW_TIERS = {
       "role": "Ranged Attacker"
     },
     {
-      "name": "Shibami",
-      "rating": 3.67,
+      "name": "Orchira",
+      "rating": 3.62,
       "tier": "C",
       "role": "Ranged Attacker"
     },
     {
-      "name": "Orchira",
-      "rating": 3.59,
+      "name": "Shibami",
+      "rating": 3.6,
       "tier": "C",
       "role": "Ranged Attacker"
     },
     {
       "name": "Grunid",
-      "rating": 3.58,
+      "rating": 3.56,
       "tier": "C",
       "role": "Ranged Attacker"
     },
     {
       "name": "Winterpage Desmara",
-      "rating": 3.52,
+      "rating": 3.51,
       "tier": "C",
       "role": "Ranged Attacker"
     },
     {
-      "name": "Rufin",
-      "rating": 3.94,
+      "name": "Sivuun",
+      "rating": 4,
       "tier": "C",
       "role": "Support"
     },
     {
-      "name": "Atanna the Convincer",
+      "name": "Rufin",
+      "rating": 3.95,
+      "tier": "C",
+      "role": "Support"
+    },
+    {
+      "name": "Judicator Kalistia",
       "rating": 3.95,
       "tier": "C",
       "role": "Tank"
     },
     {
-      "name": "Judicator Kalistia",
-      "rating": 3.93,
+      "name": "Atanna the Convincer",
+      "rating": 3.95,
       "tier": "C",
       "role": "Tank"
     },
@@ -1078,13 +1072,13 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Runeshield Brotten",
-      "rating": 3.83,
+      "rating": 3.85,
       "tier": "C",
       "role": "Tank"
     },
     {
       "name": "Chainbreaker Annis",
-      "rating": 3.74,
+      "rating": 3.76,
       "tier": "C",
       "role": "Tank"
     },
@@ -1095,20 +1089,32 @@ window.UNDW_TIERS = {
       "role": "Tank"
     },
     {
+      "name": "Bonetaker Kotsuga",
+      "rating": 3.5,
+      "tier": "D",
+      "role": "Melee Attacker"
+    },
+    {
       "name": "Krakenblood Stonn",
       "rating": 3.49,
       "tier": "D",
       "role": "Melee Attacker"
     },
     {
-      "name": "Akara the Cleaver",
+      "name": "Orvadal the Lost King",
       "rating": 3.48,
       "tier": "D",
       "role": "Melee Attacker"
     },
     {
-      "name": "Orvadal the Lost King",
-      "rating": 3.47,
+      "name": "Benierre the Axle",
+      "rating": 3.46,
+      "tier": "D",
+      "role": "Melee Attacker"
+    },
+    {
+      "name": "Akara the Cleaver",
+      "rating": 3.46,
       "tier": "D",
       "role": "Melee Attacker"
     },
@@ -1119,68 +1125,62 @@ window.UNDW_TIERS = {
       "role": "Melee Attacker"
     },
     {
-      "name": "Benierre the Axle",
-      "rating": 3.44,
-      "tier": "D",
-      "role": "Melee Attacker"
-    },
-    {
-      "name": "Brunna",
-      "rating": 3.44,
-      "tier": "D",
-      "role": "Melee Attacker"
-    },
-    {
-      "name": "Lothac",
+      "name": "Don Hammon",
       "rating": 3.43,
       "tier": "D",
       "role": "Melee Attacker"
     },
     {
-      "name": "Vaultkeeper Stullda",
+      "name": "Brunna",
+      "rating": 3.42,
+      "tier": "D",
+      "role": "Melee Attacker"
+    },
+    {
+      "name": "Lothac",
       "rating": 3.41,
       "tier": "D",
       "role": "Melee Attacker"
     },
     {
-      "name": "Don Hammon",
+      "name": "Vaultkeeper Stullda",
       "rating": 3.4,
       "tier": "D",
       "role": "Melee Attacker"
     },
     {
       "name": "Paralia",
-      "rating": 3.28,
+      "rating": 3.3,
       "tier": "D",
       "role": "Melee Attacker"
     },
     {
       "name": "Ignar",
-      "rating": 3.48,
-      "tier": "D",
-      "role": "Ranged Attacker"
-    },
-    {
-      "name": "Bea the Cleaner",
-      "rating": 3.46,
+      "rating": 3.5,
       "tier": "D",
       "role": "Ranged Attacker"
     },
     {
       "name": "Rilven",
+      "rating": 3.45,
+      "tier": "D",
+      "role": "Ranged Attacker"
+    },
+    {
+      "name": "Bea the Cleaner",
       "rating": 3.44,
       "tier": "D",
       "role": "Ranged Attacker"
     },
     {
-      "name": "Battarok",
-      "rating": 3.48,
+      "name": "Ganbuku of the Mask",
+      "rating": 3.47,
       "tier": "D",
       "role": "Tank"
     },
     {
-      "name": "Ganbuku of the Mask",
-      "rating": 3.44,
+      "name": "Battarok",
+      "rating": 3.46,
       "tier": "D",
       "role": "Tank"
     },
@@ -1192,7 +1192,7 @@ window.UNDW_TIERS = {
     },
     {
       "name": "Ballus the Bull",
-      "rating": 3.36,
+      "rating": 3.38,
       "tier": "D",
       "role": "Tank"
     },
@@ -1636,5 +1636,9 @@ window.UNDW_TIERS = {
       "tier": "D",
       "role": "Tank"
     }
-  ]
+  ],
+  "sourceUpdatedAtByKind": {
+    "champions": "2026-10-15",
+    "titans": "2026-10-14"
+  }
 };
